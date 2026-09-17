@@ -1,0 +1,78 @@
+{
+  "systeme_io_custom_fields": [
+    {
+      "field_name": "business_name",
+      "label": "Business Name",
+      "type": "text",
+      "description": "Registered or trading business name in the Philippines",
+      "required": true,
+      "mapped_form_input": "business_name"
+    },
+    {
+      "field_name": "facebook_page_url",
+      "label": "Facebook Page URL",
+      "type": "text",
+      "description": "Link to prospect's business Facebook page or username",
+      "required": true,
+      "mapped_form_input": "facebook_url"
+    },
+    {
+      "field_name": "industry",
+      "label": "Industry",
+      "type": "dropdown",
+      "options": [
+        "Clinic",
+        "Salon",
+        "Restaurant",
+        "Contractor",
+        "Real Estate",
+        "Professional Services",
+        "Retail",
+        "Other"
+      ],
+      "mapped_form_input": "industry"
+    },
+    {
+      "field_name": "primary_goal",
+      "label": "Primary Goal",
+      "type": "dropdown",
+      "options": [
+        "Get more inquiries",
+        "Show my services",
+        "Accept bookings",
+        "Sell products",
+        "Improve visibility"
+      ],
+      "mapped_form_input": "primary_goal"
+    },
+    {
+      "field_name": "approx_budget",
+      "label": "Approximate Budget",
+      "type": "dropdown",
+      "options": [
+        "₱15,000",
+        "₱25,000",
+        "₱40,000+"
+      ],
+      "mapped_form_input": "approx_budget"
+    },
+    {
+      "field_name": "email",
+      "label": "Email",
+      "type": "email",
+      "systeme_native": true,
+      "required": true,
+      "mapped_form_input": "email"
+    }
+  ],
+  "webhook_payload_example": {
+    "business_name": "Lumina Dental Care",
+    "facebook_url": "https://facebook.com/luminadentalph",
+    "industry": "Clinic",
+    "primary_goal": "Accept bookings",
+    "approx_budget": "₱25,000",
+    "email": "doctor@luminadental.ph",
+    "source": "AetherCore Squeeze Page Pop-up",
+    "submitted_at": "2026-09-17T17:15:00.000Z"
+  }
+}
